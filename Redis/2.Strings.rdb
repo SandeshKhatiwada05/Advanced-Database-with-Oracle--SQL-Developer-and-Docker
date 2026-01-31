@@ -1,0 +1,12 @@
+# Increment/Decrement
+SET counter 10
+INCR counter        # 11
+INCRBY counter 5    # 16
+DECR counter        # 15
+
+# Expiring keys
+SET tempKey "I vanish" EX 10   # disappears in 10 seconds
+TTL tempKey                    # check remaining time
+
+# Append
+APPEND myKey " World"          # "Hello World"

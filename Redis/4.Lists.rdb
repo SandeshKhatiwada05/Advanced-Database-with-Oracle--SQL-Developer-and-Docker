@@ -1,0 +1,14 @@
+# Push to left or right
+LPUSH myList "first" "second"
+RPUSH myList "last"
+
+# Get elements
+LRANGE myList 0 -1    # all elements
+LRANGE myList 0 1     # first 2 elements
+
+# Pop elements
+LPOP myList            # remove from left
+RPOP myList            # remove from right
+
+# Insert at position
+LINSERT myList AFTER "second" "middle"

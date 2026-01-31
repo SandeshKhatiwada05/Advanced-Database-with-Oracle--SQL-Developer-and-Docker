@@ -1,0 +1,11 @@
+# Add elements
+SADD mySet "apple" "banana" "orange"
+
+# Check membership
+SISMEMBER mySet "apple"  # 1 = yes
+
+# Remove element
+SREM mySet "banana"
+
+# Random pick
+SRANDMEMBER mySet

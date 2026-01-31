@@ -1,0 +1,11 @@
+# SET key value
+SET myKey "Hello"
+
+#GET key
+GET myKey
+
+HSET user:1 name sandesh age 23 stack backend college orchid
+
+HGET user:1 name
+
+HGETALL user:1

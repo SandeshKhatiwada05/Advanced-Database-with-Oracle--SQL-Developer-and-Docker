@@ -1,0 +1,11 @@
+# Add more fields
+HSET user:1 email "sandesh@example.com" city "Kathmandu"
+
+# Increment numeric field
+HINCRBY user:1 age 1           # age becomes 24
+
+# Check if field exists
+HEXISTS user:1 stack            # 1 = yes, 0 = no
+
+# Get multiple fields
+HMGET user:1 name age

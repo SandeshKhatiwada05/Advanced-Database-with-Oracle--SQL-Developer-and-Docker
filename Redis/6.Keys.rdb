@@ -1,0 +1,8 @@
+# List all keys (don’t do in prod if huge DB)
+KEYS *
+
+# Delete key
+DEL myKey
+
+# Check type
+TYPE myList
